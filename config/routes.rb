@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  get 'users/index'
-
-  get 'users/show'
-
-  devise_for :users
+  
   root 'tweets#index'
-
+  devise_for :users
   resources :tweets
+  resources :users
+  
 end

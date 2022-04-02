@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :authenticate_user!, except: [:index]  # deviseのメソッドで「ログインしていないユーザーをログイン画面に送る」メソッド
+  before_action :authenticate_user!, except: [:index]
   def new
     @tweet = Tweet.new
   end
